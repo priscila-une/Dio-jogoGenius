@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background-color: rgb(18, 19, 17);
+    font-family:cursive;
+}
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 5px solid rgb(242, 246, 247);
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    left:30vw;
+}
+
+#card{
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #a6f0c6, #a98b98, #4e3d53);
+    box-shadow:deeppink 0px 0px 10px 10px;
+    text-align: center;
+    position: absolute;
+    left:410px;
+    line-height: 50px;
+}
+
+#card h2{
+    font-size: 30px;
+}
+
+#card p{
+    font-size: 18px;
+}
+
+#btn{
+    width:200px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top:50px;
+    border:1px dashed black;
+    background-color: #c493d3;
+    font-size:20px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: rgba(20, 20, 236, 0.877);
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: rgba(226, 28, 28, 0.911);
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: rgba(209, 209, 25, 0.918);
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgba(16, 139, 16, 0.918);
+    border-top-left-radius: 100%;
+}
+
+.selected{
+    opacity: 0.8;
+}
